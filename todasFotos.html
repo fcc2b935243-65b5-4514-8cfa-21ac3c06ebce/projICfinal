@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="todasFotos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <title>MementoGallery - Todas as Fotos</title>
+</head>
+<body>
+<div class="container">
+  <div class="footer">
+    <button id="editarAlbumBtn">Editar</button>
+    <button id="moverFtBtn" class="hide disabled">Inserir em Álbum</button>
+    <button id="apagarFtsBtn" class="hide disabled">Apagar Fotos</button>
+  </div>
+  <div class="main-area"></div>
+  <div class="header"></div>
+  <div class="nav" id="header">
+      <a href="importar.html">Importar Fotos</a>
+      <a href="todasFotos.html">Todas as Fotos</a>
+      <a href="duplicados.html">Duplicados</a>
+      <div id="pesquisa">
+        <input type="text" placeholder="Pesquisa de álbuns/fotos" id="input-pesquisa" readonly>
+        <button id="botao-pesquisa"><i class="material-symbols-outlined">search</i></button>
+      </div>
+    </div>
+  <div class="home">
+    <div class="homeIcon">      
+      <a href="index.html"><i class="material-symbols-outlined" id="homeBtn">home</i></a>
+    </div>
+  </div>
+  <div class="exit">
+    <div class="exitIcon">        
+      <button id="exitBtn"><span class="material-symbols-outlined" id="exitBtn">close</span></button> 
+    </div>
+  </div>
+  <div class="mainArea"> 
+    <div class="mainAreaContent">
+        <section id="albums">
+          <div id="replaceOne">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+            <img alt="picture" src="imagens/placeholder.png">
+          </div>
+        </section>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="imagens.js"></script>
+<script src="geral.js"></script>
+<script src="todasFotos.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <title>MementoGallery</title>
+</head>
+<body>
+<div class="container">
+  <div class="footer"></div>
+  <div class="main-area"></div>
+  <div class="header"></div>
+  <div class="nav" id="header">
+      <a href="importar.html">Importar Fotos</a>
+      <a href="todasFotos.html">Todas as Fotos</a>
+      <a href="duplicados.html">Duplicados</a>
+      <div id="pesquisa">
+        <input type="text" placeholder="Pesquisa de álbuns/fotos" id="input-pesquisa" readonly>
+        <button id="botao-pesquisa"><i class="material-symbols-outlined">search</i></button>
+      </div>
+    </div>
+  <div class="home">
+    <div class="homeIcon">      
+      <a href="index.html"><i class="material-symbols-outlined" id="homeBtn">home</i></a>
+    </div>
+  </div>
+  <div class="exit">
+    <div class="exitIcon">        
+      <button id="exitBtn"><span class="material-symbols-outlined" id="exitBtn">close</span></button> 
+    </div>
+  </div>
+  <div class="mainArea">
+    <div class="mainAreaContent">
+        <section id="albums">
+          <div id="placeholderAlbum">
+          <p>Seja bem-vindo à MementoGallery.</p>
+          <p>Os seus álbums irão aparecer aqui.</p>
+          </div>
+          <div id="albums-pics-container">
+            <img alt="picture" class="album1" src="imagens/albumPic.png">
+            <img alt="picture" class="album2" src="imagens/albumPic.png">
+            <img alt="picture" class="album3" src="imagens/albumPic.png">
+            <img alt="picture" class="album4" src="imagens/albumPic.png">
+            <img alt="picture" class="album5" src="imagens/albumPic.png">
+            <img alt="picture" class="album6" src="imagens/albumPic.png">
+          </div>  
+        </section>
+    </div>
+    <div class="sideArea">    
+      <section id="nav-acesso-rapido">
+        <div class="sidebaritems">
+          <button class="sidebarBtn" id="filtrarBtn"><span class="btnText">Filtrar Álbuns</span></button>
+          <button class="sidebarBtn" id="editarAlbunsBtn"><span class="btnText">Editar Álbuns</span></button>
+          <button class="sidebarBtn" id="partilharBtn"><span class="btnText partilharTxt">Lixeira</span></button>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="imagens.js"></script>
+<script src="geral.js"></script>
+<script src="index.js"></script>
+</body>
+</html>

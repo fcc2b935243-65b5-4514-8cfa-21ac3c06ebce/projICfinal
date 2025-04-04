@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="albumnumber.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet"> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
+    <title>MementoGallery - Álbum #2</title>
+</head>
+<body>
+<div class="container">
+  <div id="footer" class="footer">
+    <button id="editarAlbumBtn">Editar Álbum</button>
+    <button id="moverFtBtn" class="hide disabled">Mover Foto</button>
+    <button id="apagarFtsBtn" class="hide disabled">Apagar Foto</button>
+    <button id="apagarAlbumBtn" class="hide ">Apagar Álbum</button>
+  </div>
+  <div class="nav" id="header">
+      <a href="importar.html">Importar Fotos</a>
+      <a href="todasFotos.html">Todas as Fotos</a>
+      <a href="duplicados.html">Duplicados</a>
+      <div id="pesquisa"><input type="text" placeholder="Pesquisa de álbuns/fotos" id="input-pesquisa" readonly><button id="botao-pesquisa"><i class="material-symbols-outlined">search</i></button></div>
+    </div>
+  <div class="home">
+    <div class="homeIcon">      
+      <a href="index.html"><i class="material-symbols-outlined" id="homeBtn">home</i></a>
+    </div>
+  </div>
+  <div class="exit">
+    <div class="exitIcon">        
+      <button id="exitBtn"><span class="material-symbols-outlined" id="exitBtn">close</span></button> 
+    </div>
+  </div>
+  <div class="mainArea"> 
+    <div class="mainAreaContent">
+        <section id="import-container">
+          <div id="importPicsContainerContainer" class="displayPics">
+          </div>
+          <div id="informacaoAlbum">
+            <h2 id="informacaoAlbumTitle"><b>Informação</b></h2>
+            <section class="info">
+            <span class="material-symbols-outlined icones">badge</span>
+            <b>Nome do Álbum:</b>
+            <p id="nomeAlbum">Nome aqui</p>
+            <input type="text" placeholder="Editar o nome" id="editName" readonly>
+            </section>
+            <section class="info">
+            <span class="material-symbols-outlined icones iconEdit">edit_note</span>
+            <b>Descrição do Álbum:</b>
+            <input type="text" placeholder="Editar a descrição" id="editDescription" readonly>
+            <p id="descricaoAlbum">Comentário</p>
+            </section>
+            <section class="info">
+            <span class="material-symbols-outlined icones">apps</span>
+            <b>Número de Fotos:</b>
+            <p>Número</p>
+            </section>
+            <section class="info">
+            <span class="material-symbols-outlined icones">calendar_add_on</span>            
+            <b>Data de Criação:</b>
+            <p>07-12-24</p>
+            </section>
+            <section class="info">
+            <span class="material-symbols-outlined icones">edit_calendar</span>
+            <b>Última alteração:</b>
+            <p>07-12-24</p>
+            </section>
+            <section class="info">
+            <span class="material-symbols-outlined icones">share</span>
+            <b>Partilhar álbum</b>
+            <button id="partilharBtn">Clique para partilhar</button>
+            </section>
+          </div>
+        </section>
+    </div>
+  </div>
+</div>
+<script src="imagens.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="geral.js"></script>
+<script src="albumnumber2.js"></script>
+</body>
+</html>

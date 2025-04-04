@@ -1,0 +1,258 @@
+/* css reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  scrollbar-color: #424242 #FAFAFA;
+}
+
+/*dark theme styling*/
+#linkDuplicados {
+  padding: 1px 5px;
+}
+
+.footer a, .footer button {
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 14pt;
+  width: fit-content;
+  margin-right: 50px;
+}
+  
+#header {
+  padding-bottom: 30px;
+}
+
+#header a {
+  height: 50px;
+  text-align: center;
+}
+
+.mainArea, html, .footer {
+background-color: #FAFAFA;
+}
+
+.homeIcon a {
+  height: 50px !important;
+}
+
+.nav, .exit, .home, .header {
+  background-color: #212121;
+  font-size: 14pt;
+  font-weight: bold;
+} 
+
+h2 {
+  color: #FAFAFA;
+}
+
+#input-pesquisa {
+  padding: 15px;
+  font-size: 12pt;
+  font-weight: normal;
+  background-color: #BDBDBD;
+  border: none;
+}
+
+::placeholder {
+  color: #424242;
+  opacity: 1;
+}
+
+::-ms-input-placeholder {
+  color: #424242;
+}
+
+a:link, a:visited, button {
+  background-color: #424242;
+  color: #FAFAFA;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  height: fit-content;
+  border: none;
+}
+
+/* grid layout */ 
+.container {  display: grid;
+  grid-template-columns: 0.4fr 3.5fr 0.9fr 0.5fr;
+  grid-template-rows: 0.2fr 2.6fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  height: 720px;
+  width: 1280px;
+  border: 1px solid black;
+}
+
+.footer { grid-area: 3 / 1 / 4 / 5; }
+
+.home {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "icon . ."
+    ". . ."
+    ". . .";
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.homeIcon { grid-area: icon; }
+
+.exit {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . exitIcon"
+    ". . ."
+    ". . .";
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.exitIcon { grid-area: exitIcon; }
+
+.header { grid-area: 1 / 2 / 2 / 4; }
+
+.nav { grid-area: 1 / 2 / 2 / 4; }
+
+.mainArea {  display: grid;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". mainAreaContent mainAreaContent"
+    "mainAreaContent mainAreaContent mainAreaContent"
+    "mainAreaContent mainAreaContent mainAreaContent";
+  grid-area: 2 / 1 / 3 / 5;
+}
+
+.mainAreaContent { grid-area: mainAreaContent;
+}
+
+/*general layout css */ 
+#header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  vertical-align: top;
+  height: 50px;
+  width: 80px;
+}
+
+button, .homeIcon {
+  cursor: pointer;
+}
+
+/* virar icon */
+#botao-pesquisa {
+  transform: scaleX(-1);
+}
+
+#input-pesquisa {
+  height: 50px;
+  cursor: not-allowed;
+}
+
+.disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  color:#fff;
+  border-color: #a0a0a0;
+  background-color: #a0a0a0;
+}
+
+/*sweetalert popup*/
+div:where(.swal2-container).swal2-center>.swal2-popup {
+  padding: 10px;
+}
+
+#swal2-html-container {
+  max-height: 200px;
+}
+
+/*specific css */
+img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.trashIcon {
+  position: relative;
+  margin-left: 130px;
+  top: 30px;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+#titulo {
+  top: 70px;
+  position: absolute;
+}
+
+div:where(.swal2-container) h2:where(.swal2-title) {
+  padding: 0 !important;
+}
+
+.swal2-html-container {
+  padding: 0.5em 1.6em .3em !important;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order-2 {
+  order: 2;
+}
+
+.order-3 {
+  order: 3;
+}
+
+#infoFotos {
+  text-align: right;
+  position: relative;
+  width: 200px;
+  left: 13px;
+  height: 100px;
+}
+
+#infoFoto {
+  text-align: left;
+  position: relative;
+  top: -99px;
+  right: -218px;
+  width: 200px;
+  height: 100px;
+}
+
+#replaceOne {
+  display: grid;
+  grid-template-columns: repeat(7, 150px);
+}
+
+span, img {
+  cursor: pointer;
+}
+
+#albums {
+  overflow-y: auto;
+  max-height: 555px;
+}
+
+.albumPicsTheContainer {
+  margin-top: -25px;
+}
